@@ -123,10 +123,10 @@ color: rgb(255, 255, 0);</string>
    <widget class="QCalendarWidget" name="calendarWidget">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>20</y>
-      <width>521</width>
-      <height>291</height>
+      <x>130</x>
+      <y>100</y>
+      <width>371</width>
+      <height>211</height>
      </rect>
     </property>
    </widget>
@@ -140,8 +140,51 @@ color: rgb(255, 255, 0);</string>
      <height>26</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuCadastros">
+    <property name="title">
+     <string>Cadastros</string>
+    </property>
+    <widget class="QMenu" name="menuPer_odos">
+     <property name="title">
+      <string>Períodos</string>
+     </property>
+     <addaction name="actionPer_odo_x_Contas"/>
+    </widget>
+    <addaction name="actionGrupo_de_Categorias"/>
+    <addaction name="actionCategorias"/>
+    <addaction name="menuPer_odos"/>
+    <addaction name="separator"/>
+    <addaction name="actionCompras_a_Prazo"/>
+   </widget>
+   <widget class="QMenu" name="menuTarefas">
+    <property name="title">
+     <string>Tarefas</string>
+    </property>
+   </widget>
+   <addaction name="menuCadastros"/>
+   <addaction name="menuTarefas"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionGrupo_de_Categorias">
+   <property name="text">
+    <string>Grupo de Categorias</string>
+   </property>
+  </action>
+  <action name="actionCategorias">
+   <property name="text">
+    <string>Categorias</string>
+   </property>
+  </action>
+  <action name="actionPer_odo_x_Contas">
+   <property name="text">
+    <string>Período x Contas</string>
+   </property>
+  </action>
+  <action name="actionCompras_a_Prazo">
+   <property name="text">
+    <string>Compras a Prazo</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
