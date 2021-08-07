@@ -7,6 +7,12 @@ valor_max = 100
 valor = 0
 
 
+def GrCategorias():
+    chama_form()
+    print('Deu Certo a chamada')
+
+
+
 def funcao_listar():
     global valor
     dadolido = formulario.lineEdit.text()
@@ -57,7 +63,7 @@ formulario.pushButton.clicked.connect(funcao_listar)
 formulario.pushButton_2.clicked.connect(funcao_excluir)
 formulario.pushButton_3.clicked.connect(chama_form)
 formulario.calendarWidget.selectionChanged.connect(pegar_data)
-
+formulario.actionGrupo_de_Categorias.triggered.connect(GrCategorias)
 
 formulario.show()
 
