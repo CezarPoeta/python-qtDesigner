@@ -15,8 +15,9 @@ def Bloqueia():
 
 
 def CarregarGrCategorias():
-    print(cursor.fetchall())
-    print('Funcionou, vou dormmir agora!')
+    
+    for i in cursor.fetchall():
+        print(i[0],i[1])
 
 
 app = QtWidgets.QApplication([])
@@ -24,7 +25,8 @@ app = QtWidgets.QApplication([])
 formulario=uic.loadUi('frmGrCategorias.ui')
 
 Bloqueia()
-CarregarGrCategorias() 
+print(formulario.lstGrCategorias.setItem(0, 0, QtWidgets.QTableWidgetItem('teste')))
+#CarregarGrCategorias() 
 
 #formulario.show()
 
