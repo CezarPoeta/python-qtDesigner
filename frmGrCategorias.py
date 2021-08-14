@@ -25,7 +25,9 @@ app = QtWidgets.QApplication([])
 formulario=uic.loadUi('frmGrCategorias.ui')
 
 Bloqueia()
-print(formulario.lstGrCategorias.setItem(0, 0, QtWidgets.QTableWidgetItem('teste')))
+
+#print(formulario.lstGrCategorias.setItem(0, 0, QtWidgets.QTableWidgetItem('teste')))
+print(dir(formulario.lstGrCategorias.rowCount()))
 #CarregarGrCategorias() 
 
 #formulario.show()
