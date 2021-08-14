@@ -19,7 +19,6 @@ class YuTextFrame(QWidget):
             table.setItem(row, col, cell)
             col += 1
 
-
     def initUI(self): 
         self.setWindowTitle('PyQT Table Add Row Data Dynamically')  
         vbox = QVBoxLayout()

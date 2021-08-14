@@ -13,11 +13,29 @@ def Bloqueia():
     formulario.btnConfirmar.setStyleSheet('QPushButton {background-color: rgb(177, 180, 197); color: rgb(134, 134, 134)}')
     formulario.btnSair.setStyleSheet('QPushButton {background-color: rgb(177, 180, 197); color: rgb(134, 134, 134)}')
 
+def addTableRow(self, table, row_data):
+    row = table.rowCount()
+    table.setRowCount(row+1)
 
-def CarregarGrCategorias():
-    
-    for i in cursor.fetchall():
-        print(i[0],i[1])
+    col = 0
+    for item in row_data:
+        cell = QtWidgets.QTableWidgetItem(str(item))
+        table.setItem(row, col, cell)
+        col += 1
+
+def CarregarGrCategorias(self):
+    table = QtWidgets.QTableWidget(self)
+        
+    table.rowCount()
+    row_1 = ['001', 'John']
+    row_2 = ['002', 'Lily']
+    row_3 = ['003', 'Kate']
+    row_4 = ['004', 'Tom']
+
+    addTableRow(table, row_1)
+    addTableRow(table, row_2)
+    addTableRow(table, row_3)
+    addTableRow(table, row_4)
 
 
 app = QtWidgets.QApplication([])
@@ -26,9 +44,7 @@ formulario=uic.loadUi('frmGrCategorias.ui')
 
 Bloqueia()
 
-#print(formulario.lstGrCategorias.setItem(0, 0, QtWidgets.QTableWidgetItem('teste')))
-print(dir(formulario.lstGrCategorias.rowCount()))
-#CarregarGrCategorias() 
+CarregarGrCategorias(formulario) 
 
 #formulario.show()
 
