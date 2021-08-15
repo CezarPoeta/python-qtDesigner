@@ -1,1 +1,0 @@
-background-color:rgb(182, 182, 182)
