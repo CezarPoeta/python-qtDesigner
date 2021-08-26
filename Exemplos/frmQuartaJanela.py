@@ -1,3 +1,6 @@
+import sys
+sys.path.append('C:\\Users\\cezar\\DataScience\\python-qtDesigner\\Exemplos')
+
 #Controle do frm com o Python
 
 from PyQt5 import uic, QtWidgets
