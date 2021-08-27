@@ -78,10 +78,10 @@ class Janela (QMainWindow):
         self.labelcaixa.setText("Digitou: " + conteudo)
         
 
-#if __name__ == '__main__':
+if __name__ == '__main__':
 
-#aplicacao = QApplication(sys.argv)
+    aplicacao = QApplication(sys.argv)
 
-#j = Janela()
+    j = Janela()
 
-#sys.exit(aplicacao.exec_())
+    sys.exit(aplicacao.exec_())

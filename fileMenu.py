@@ -2,7 +2,6 @@ import sys
 import Formularios
 
 #Controle do frm com o Python
-
 from PyQt5 import uic, QtWidgets
 
 def funcao_principal():
@@ -16,8 +15,9 @@ if __name__ == '__main__':
     formulario=uic.loadUi('frmListW.ui')
 
     formulario.pushButton.clicked.connect(funcao_principal)
-    formulario.pushButton_3.clicked.connect(Formularios.frmPrimeiraJanela.Janela)
+    formulario.pushButton_3.clicked.connect(Formularios.frmSimples.formulario)
+
     formulario.show()
 
+
     sys.exit(app.exec_())
-    #app.exec()

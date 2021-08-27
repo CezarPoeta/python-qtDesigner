@@ -1,1 +1,1 @@
-from Formularios import frmPrimeiraJanela
+from Formularios import frmPrimeiraJanela, frmSimples
