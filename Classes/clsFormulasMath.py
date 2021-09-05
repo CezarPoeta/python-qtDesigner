@@ -14,3 +14,6 @@ class Bascara_2():
 
     def calc_bas(self):
         return self.x
+
+    def set_x(self, val):
+        self.x = val
