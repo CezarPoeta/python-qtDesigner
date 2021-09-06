@@ -1,19 +1,26 @@
 class Bascara_1():
-    def __init__(self):
-        self.x = 0
-        return print('Entrou na Bascara_1')
+    def __init__(self, pvalor):
+        self.atr_valor = pvalor
+        msg='Entrou na Bascara_1'
+        return print(msg)
 
-    def calc_bas(self, val):
-        self.x = val
-        return self.x
-
-class Bascara_2():
-    def __init__(self, val):
-        self.x = val
-        return print('Entrou na Bascara_2')
 
     def calc_bas(self):
-        return self.x
+        val = self.atr_valor * 2
+        return val
 
-    def set_x(self, val):
-        self.x = val
+    #Getter
+    @property
+    def atr_valor(self):
+        return self._atr_valor
+
+    #Setter - O uso do Getter/Setter possibilita consistir, validar os atributos passados para a Classe.
+    @atr_valor.setter
+    def atr_valor(self, pvalor):
+        if isinstance(pvalor, str):
+            pvalor = float(pvalor.replace('R$',''))
+
+        self._atr_valor = pvalor
+
+
+
